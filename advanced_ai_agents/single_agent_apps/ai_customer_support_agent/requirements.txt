@@ -1,3 +1,6 @@
 streamlit 
 openai
 mem0ai==0.1.29
+# This Mem0 release calls QdrantClient.search, removed in client 1.16.
+# Upgrade Mem0 and its adapter before removing this compatibility bound.
+qdrant-client>=1.9.1,<1.16
